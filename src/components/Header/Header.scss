@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    display: flex;
+    //justify-content: center;
+    // align-items: center;
+    width:100%;
+    padding-top:36px;
+    font-size:24pt;
+    // flex-wrap: wrap;
+    &__logo {
+        width:100%;
+        text-align:center;
+    }
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background:#000;
+}
