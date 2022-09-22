@@ -10,8 +10,8 @@ function Landing() {
                 <video src={videoBG} autoPlay loop muted />
 
                 <div className='content'>
-                    <h1>Nimble, Secure.</h1>
-                    <h2>Community Cloud Printing </h2>
+                    <h1 className='content__h1'>Nimble, Secure.</h1>
+                    <h2 className='content__h2'>Encrypted Cloud Printing </h2>
                     <button className='button__print'>Print</button> <button className='button__host'>Host</button>
                     
                 </div>
