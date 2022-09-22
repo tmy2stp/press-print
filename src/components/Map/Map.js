@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from "mapbox-gl";
 import "./Map.scss";
+import 'mapbox-gl/dist/mapbox-gl.css';
+import printers from "../../data/printers.json";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
 
@@ -19,6 +21,11 @@ export default function Map() {
             center: [lng, lat],
             zoom: zoom
         });
+
+        printers.features.map((feature) => {
+            new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).addTo(map.current);
+        });
+        
     });
 
     useEffect(() => {
