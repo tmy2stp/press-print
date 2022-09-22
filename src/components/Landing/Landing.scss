@@ -1,0 +1,50 @@
+body {
+    color: rgb(235, 2, 146);
+    // background-image: url("https://placeimg.com/1000/1000/animals");
+}
+
+.header__logo {
+    color: rgb(241, 11, 192);
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.button__print, .button__host {
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 0 4px 1px #000;
+}
