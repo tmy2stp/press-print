@@ -1,9 +1,9 @@
 import Map from "../components/Map/Map";
 
-function Home() {
+function Print() {
     return (
         <Map />
     );
 }
 
-export default Home;
+export default Print;
