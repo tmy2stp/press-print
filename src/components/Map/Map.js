@@ -1,14 +1,17 @@
 import React, { useRef, useEffect, useState } from 'react';
+import ReactDOM from 'react-dom/client';
 import mapboxgl from "mapbox-gl";
 import "./Map.scss";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import printers from "../../data/printers.json";
+import Tooltip from "../Tooltip/Tooltip";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
 
 export default function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);
+    const tooltipRef = useRef(new mapboxgl.Popup({ offset: 15 }));
     const [lng, setLng] = useState(-79.3952);
     const [lat, setLat] = useState(43.6459);
     const [zoom, setZoom] = useState(15);
@@ -23,9 +26,11 @@ export default function Map() {
         });
 
         printers.features.map((feature) => {
-            new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).addTo(map.current);
+            const popup = new mapboxgl.Popup({offset: 25})
+            .setHTML("Status:" + feature.properties.Status + "<br/>Description: " + feature.properties.Description + "<br/>Handle:" + feature.properties.Handle);
+
+            new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).setPopup(popup).addTo(map.current);
         });
-        
     });
 
     useEffect(() => {
@@ -36,6 +41,7 @@ export default function Map() {
             setZoom(map.current.getZoom().toFixed(2));
         });
     });
+
 
     return (
         <div>
