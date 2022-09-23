@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.scss"
-import BGstill from "../../assets/LLLL.jpg"
+import BGstill from "../../assets/BGSTILL.jpg"
 
 
 function About() {

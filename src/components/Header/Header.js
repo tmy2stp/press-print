@@ -12,7 +12,7 @@ const Header = () => {
         <Sidebar />
         </div>
         <div className="header__logo">
-            Press
+            Pressed
         </div>
         </header>
     );
