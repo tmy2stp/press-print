@@ -3,8 +3,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Status": "Online",
-        "Description": "Complete Later",
+        "Status": "Busy",
+        "Description": "A4 Only, B/W - 9AM - 5PM",
         "Handle": "@oxleyPrintShop"
       },
       "geometry": {
