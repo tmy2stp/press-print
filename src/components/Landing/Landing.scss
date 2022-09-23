@@ -23,19 +23,11 @@ video {
     color: rgb(255, 255, 255);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .5)
-}
 
 .button__print, .button__host {
     color: rgb(128, 126, 126);
     background-color: transparent;
-    // border-radius: 50px;
+    border-radius: 50px;
     padding: 3px;
     padding-left: 50px;
     padding-right: 50px;
@@ -43,7 +35,7 @@ video {
     font-family: serif;
     font-size: 13px;
     text-transform: uppercase;
-    border: 1px white solid;
+    border: 2px white solid;
     
 }
 

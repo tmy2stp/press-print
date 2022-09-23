@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landing.scss'
-import videoBG from '../../assets/OTHERBG.mp4'
+import videoBG from '../../assets/BGOPTION.mp4'
 
 function Landing() {
     return (
