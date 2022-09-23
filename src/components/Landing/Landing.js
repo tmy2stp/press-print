@@ -6,15 +6,15 @@ function Landing() {
     return (
         <>
             <div className='main'>
-                <div className='overlay'> 
-                <video src={videoBG} autoPlay loop muted />
+                <div className='overlay'>
+                    <video src={videoBG} autoPlay loop muted />
 
-                <div className='content'>
-                    <h1 className='content__h1'>Nimble, Secure.</h1>
-                    <button className='button__print'>Print</button> <button className='button__host'>Host</button>
-                    
+                    <div className='content'>
+                        <h1 className='content__h1'>Nimble, Secure.</h1>
+                        <button className='button__print'>Print</button> <button className='button__host'>Host</button>
+
+                    </div>
                 </div>
-            </div>
             </div>
         </>
     )
