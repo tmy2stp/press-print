@@ -40,15 +40,18 @@ video {
 }
 
 .button__print, .button__host {
-    color: white;
+    color: rgb(128, 126, 126);
     background-color: transparent;
-    border-radius: 50px;
-    padding: 7px;
+    // border-radius: 50px;
+    padding: 3px;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: 0 0 4px 1px #000;
+    // box-shadow: 0 0 4px 1px #000;
     font-family: serif;
-    font-size: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px white solid;
+    
 }
 
 .content__h1 {

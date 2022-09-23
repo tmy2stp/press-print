@@ -11,7 +11,6 @@ function Landing() {
 
                 <div className='content'>
                     <h1 className='content__h1'>Nimble, Secure.</h1>
-                    <h2 className='content__h2'>Encrypted Cloud Printing </h2>
                     <button className='button__print'>Print</button> <button className='button__host'>Host</button>
                     
                 </div>
