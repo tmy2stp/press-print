@@ -1,17 +1,14 @@
 import React, { useRef, useEffect, useState } from 'react';
-import ReactDOM from 'react-dom/client';
 import mapboxgl from "mapbox-gl";
 import "./Map.scss";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import printers from "../../data/printers.json";
-import Tooltip from "../Tooltip/Tooltip";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
 
 export default function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const tooltipRef = useRef(new mapboxgl.Popup({ offset: 15 }));
     const [lng, setLng] = useState(-79.3952);
     const [lat, setLat] = useState(43.6459);
     const [zoom, setZoom] = useState(15);
