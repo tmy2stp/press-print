@@ -23,7 +23,7 @@ function HostModal() {
                 <div className='modal__form'>
 
                     <form>
-                        <label><input placeholder="Order Quantity / Notes" type="text" /></label>
+                        <label><input className='input__test' placeholder="Order Quantity / Notes" type="text" /></label>
                         <button className='modal__form--button'>Submit</button>
                     </form>
                 </div>
@@ -37,7 +37,7 @@ function HostModal() {
 
 
                 <div className='modal__footer'>
-                    <button className='modal__buttonclose'>Close</button>
+                    <button className='modal__buttonclose'>Submit Order</button>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@
     width: 330px;
     height: 100vh;
     z-index: 1;
+    margin: 0;
 }
 
 .modal__header {
@@ -22,6 +23,7 @@
     margin-bottom: -3rem;
     margin-top: -1.5rem;
 }
+
 
 .modal__close {
     font-size: 1rem;
@@ -86,9 +88,20 @@
     border: none;
     outline: none;
     cursor: crosshair;
-    border-radius: 50px;
-    padding: .375rem;
+    border-radius: 20px;
+    padding: .2rem;
     padding-left: .625rem;
     padding-right: .625rem;
+
+
+}
+
+.input__test {
+    background-color: pink;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    font-style: italic;
 
 }
