@@ -1,16 +1,20 @@
-.backround {
+.background {
         width: 100%;
         height: 100vh;
     }
 
 
-.backround__image {
+.background__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     }
 
-.backround__content {
+.background__copy {
+    font-family: WadenThicc;
+}
+
+.background__content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,7 +26,7 @@
     color: rgb(34, 51, 58);
     }
 
-.backround__overlay {
+.background__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,3 +34,26 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8)
 }
+
+.background__header {
+    font-family: WadenThicc;
+}
+
+.copy__container {
+    width: 900px;
+    height: 200px;
+}
+// .scroll-container {
+//     border-radius: 5px;
+//     overflow: hidden;
+// }
+
+// .scroll-text {
+//     text-align: right;
+//     font-family: WadenThicc;
+// }
+
+// .header__logo {
+//     font-family: WadenThicc;
+//     }
+
