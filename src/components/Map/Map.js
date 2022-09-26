@@ -3,6 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "./Map.scss";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import printers from "../../data/printers.json";
+import HostModal from "../HostModal/HostModal";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
 
@@ -45,6 +46,7 @@ export default function Map() {
             <div className="sidebar">
                 Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
             </div>
+            <HostModal />
             <div ref={mapContainer} className="map-container" />
         </div>
     );

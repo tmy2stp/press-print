@@ -20,7 +20,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Online",
-        "Description": "Complete Later",
+        "Description": "Located in Dark Horse Espresso. Available from 8-3PM. B/W / Color",
         "Handle": "@tmy2stp"
       },
       "geometry": {
@@ -36,7 +36,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Online",
-        "Description": "Complete Later",
+        "Description": "Available for legal sizing and A4. Pickup offered at concierge.",
         "Handle": "@printBoi420"
       },
       "geometry": {
@@ -52,7 +52,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Online",
-        "Description": "Complete Later 2",
+        "Description": "24/7 printing @ 554 King St. W Concierge",
         "Handle": "@kingSpadinaPrint"
       },
       "geometry": {
@@ -68,7 +68,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Online",
-        "Description": "Complete Later",
+        "Description": "Offering binding / presentation ready documents",
         "Handle": "@sideHustler11"
       },
       "geometry": {
@@ -84,7 +84,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Online",
-        "Description": "Complete Later --",
+        "Description": "Located inside Queen Convenience, open 24 hours",
         "Handle": "@queenConvenience"
       },
       "geometry": {
@@ -100,7 +100,7 @@
       "type": "Feature",
       "properties": {
         "Status": "Busy",
-        "Description": "Complete Later - ",
+        "Description": "Printing with recycled paper only ♻️ ",
         "Handle": "@dailyPrinter"
       },
       "geometry": {
