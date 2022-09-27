@@ -29,6 +29,7 @@ const HostForm = () => {
     };
 
     return (
+        <div className='form__container'>
         <form className="host__form" onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="form__description" className="host__label">Describe your printer</label>
             <input type="text" id="form__description" className="host__text-input-box" placeholder="Describe your printer"></input>
@@ -46,6 +47,7 @@ const HostForm = () => {
                 CANCEL
             </button></Link>
         </form>
+        </div>
     );
 };
 

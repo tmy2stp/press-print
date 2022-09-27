@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landing.scss'
-import videoBG from '../../assets/BGOPTION.mp4'
+import videoBG from '../../assets/BGVID1122.mp4'
 import { Link } from 'react-router-dom';
 
 function Landing() {
