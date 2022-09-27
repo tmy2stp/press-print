@@ -11,8 +11,9 @@ const Header = () => {
             <div>
         <Sidebar />
         </div>
-        <div className="header__logo">
-            Press
+        <div>
+        <Link to="/" className="header__logo">
+                Press</Link>
         </div>
         </header>
     );
