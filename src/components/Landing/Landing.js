@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landing.scss'
-import videoBG from '../../assets/TOMBG.mp4'
+import videoBG from '../../assets/BGOPTION.mp4'
 
 function Landing() {
     return (
@@ -12,8 +12,8 @@ function Landing() {
                     <div className='main__extruded'><h2 className='main__extruded--1'>Print</h2></div>
                         <h1 className='content__h1'>Nimble, Secure.</h1>
                         <div className='content__buttons'>
-                            <button className='button__print'>👀</button>
-                            <button className='button__host'>🖨</button>
+                            <button className='button__print'>Print</button>
+                            <button className='button__host'>Host</button>
                         </div>
                     </div>
 
