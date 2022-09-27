@@ -18,26 +18,22 @@ function HostModal() {
                     </div>
 
                     <h1 className='modal__body--title'>Online <span className='rocky__star'>|⭐️⭐️⭐️⭐️⭐️  (288)</span> </h1>
-                    <p className='modal__body--copy'>Hi I'm Rocky!<br></br>Pickup At My Pawfice!</p>
+                    <p className='modal__body--copy'>Hi I'm Rocky The Print Pup!<br></br>Send me a message, and lets connect about your project!<br></br>
+                    <button className='modal__form--button'>Message Rocky </button>
+                    </p>
+               
                 </div>
-                <div className='modal__form'>
+                <div className='modal__form'></div>
 
-                    <form>
-                        <label><input className='input__test' placeholder="Order Quantity / Notes" type="text" /></label>
-                        <button className='modal__form--button'>Submit</button>
-                    </form>
-                </div>
+      
 
-                Radio button <br></br>
-                Radio button <br></br>
-                Radio button 
 
 
 
 
 
                 <div className='modal__footer'>
-                    <button className='modal__buttonclose'>Submit Order</button>
+                    <button className='modal__buttonclose'>Place Order</button>
                 </div>
             </div>
         </div>

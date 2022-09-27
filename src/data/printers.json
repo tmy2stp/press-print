@@ -3,9 +3,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Status": "Busy",
+        "Status": "Online",
         "Description": "A4 Only, B/W - 9AM - 5PM",
-        "Handle": "@oxleyPrintShop"
+        "Handle": "@RockysPrintShop"
       },
       "geometry": {
         "coordinates": [
