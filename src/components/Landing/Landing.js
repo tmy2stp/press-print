@@ -1,6 +1,7 @@
 import React from 'react'
 import './Landing.scss'
 import videoBG from '../../assets/BGOPTION.mp4'
+import { Link } from 'react-router-dom';
 
 function Landing() {
     return (
@@ -12,8 +13,8 @@ function Landing() {
                     <div className='main__extruded'><h2 className='main__extruded--1'>Print</h2></div>
                         <h1 className='content__h1'>Nimble, Secure.</h1>
                         <div className='content__buttons'>
-                            <button className='button__print'>Print</button>
-                            <button className='button__host'>Host</button>
+                            <Link to="/print"><button className='button__print'>Print</button></Link>
+                            <Link to="/host"><button className='button__host'>Host</button></Link>
                         </div>
                     </div>
 
