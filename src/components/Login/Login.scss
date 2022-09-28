@@ -1,0 +1,19 @@
+.login {
+    &__container {
+        width:50%;
+        display:flex;
+        flex-wrap:wrap;
+        margin:auto;
+        justify-content: center;
+        padding-top:20vh;
+    }
+    &__google-button {
+        background-color:#66FF53;
+        border:none;
+        margin:24px 16px 0 0;
+        color:#36454F;
+        padding:24px;
+        font-size:1em;
+        font-family:WadenThicc;
+    }
+}
