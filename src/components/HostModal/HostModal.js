@@ -2,13 +2,17 @@ import React from 'react'
 import './HostModal.scss'
 import rockyPic from '../../assets/MYBOY.jpg'
 
+function closeModal() {
+    const modalContainer = document.getElementById("modal__container");
+    modalContainer.classList.add("closed");
+}
 
 function HostModal() {
     return (
-        <div className='modal__container'>
+        <div id="modal__container" className='modal__container closed'>
             <div className='modal__header'>
                 <p>@RockysPrintShop</p>
-                <span className='modal__close'>X</span>
+                <span className='modal__close' onClick={closeModal}>X</span>
             </div>
             <div className='modal__content'>
                 <div className='modal__body'>

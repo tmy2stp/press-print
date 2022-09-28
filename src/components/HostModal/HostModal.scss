@@ -8,8 +8,15 @@
     right: 0;
     width: 330px;
     height: 100vh;
-    z-index: 1;
+    z-index: 3;
     margin: 0;
+}
+
+.closed {
+    visibility: hidden;
+    animation:fadeIn 3s;
+    animation-delay:5s;
+    animation-fill-mode:forwards;
 }
 
 .modal__header {
