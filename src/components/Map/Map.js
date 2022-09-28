@@ -2,8 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from "mapbox-gl";
 import "./Map.scss";
 import 'mapbox-gl/dist/mapbox-gl.css';
-//import printers from "../../data/printers.json";
-import axios from "axios";
 import HostModal from "../HostModal/HostModal";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
@@ -23,13 +21,19 @@ export default function Map(props) {
             center: [lng, lat],
             zoom: zoom
         });
-        console.log(props);
         props.printers.map((feature) => {
-            console.log(feature);
             const popup = new mapboxgl.Popup({ offset: 25 })
                 .setHTML("Status:" + feature.properties.Status + "<br/>Description: " + feature.properties.Description + "<br/>Handle:" + feature.properties.Handle);
 
-            new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).setPopup(popup).addTo(map.current);
+            const marker = new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).setPopup(popup).addTo(map.current);
+            popup.on('open', (e) => {
+                const modal = document.getElementById("modal__container");
+                modal.classList.remove("closed");
+            });
+            popup.on('close', (e) => {
+                const modal = document.getElementById("modal__container");
+                modal.classList.add("closed");
+            });
         });
     });
 
