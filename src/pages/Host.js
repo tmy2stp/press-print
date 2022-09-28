@@ -1,11 +1,11 @@
-//const express = require("express");
-//const router = express.Router();
-//const fs = require("fs");
+import HostForm from '../components/HostForm/HostForm';
 const hostsPath = '../data/printers.json';
 
 function Host() {
     return (
-        <div>HOST PAGE</div>
+        <section>
+            <HostForm />
+        </section>
     );
 }
 
