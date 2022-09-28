@@ -1,11 +1,25 @@
 import './HostForm.scss';
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const HostForm = () => {
+const auth = getAuth();
+const user = auth.currentUser;
+const navigate = useNavigate();
+useEffect(() => {
+    if (user) {
+        // User is signed in.
+      } else {
+        navigate("/login");
+      }
+}, []);
+    
+
     const [message, setMessage] = useState('');
     const { handleSubmit, reset } = useForm();
     const API_URL = "http://localhost:8000/printers";
