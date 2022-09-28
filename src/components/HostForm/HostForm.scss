@@ -1,18 +1,43 @@
 .form__container {
-    background-color: teal;
-    display: flex;
-    width: 1000px;
-    height: 300px;
-    
-
+    width:100%;
+    padding-top:20vh;
 }
 
 .host__form {
-
-    height: 300px;
-    width: 700px;
-    
-
-
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
 }
-
+.host {
+    &__label {
+        width:100%;
+        padding:24px 0 24px 0;
+    }
+    &__text-input-box {
+        width:100%;
+        border-radius:4px;
+        padding:10px;
+    }
+    &__btn {
+        background-color:#66FF53;
+        border:none;
+        margin:24px 16px 0 0;
+        color:#36454F;
+        padding:24px;
+        font-size:1em;
+        font-family:WadenThicc;
+    }
+    &__cancel {
+        background-color:#CE2029;
+        margin:24px 16px 0 0;
+    }
+    &__cancel-btn {
+        background-color:#CE2029;
+        border:none;
+        color:#fff;
+        padding:24px;
+        font-size:1em;
+        font-family:WadenThicc;
+    }
+}
