@@ -1,6 +1,7 @@
 .form__container {
     width:100%;
     padding-top:20vh;
+    background-image:url('../../assets/dummybg.jpg')
 }
 
 .host__form {
@@ -13,6 +14,8 @@
     &__label {
         width:100%;
         padding:24px 0 24px 0;
+        color:#66FF53;
+        font-family: WadenThicc;
     }
     &__text-input-box {
         width:100%;
@@ -20,24 +23,39 @@
         padding:10px;
     }
     &__btn {
-        background-color:#66FF53;
-        border:none;
-        margin:24px 16px 0 0;
-        color:#36454F;
-        padding:24px;
-        font-size:1em;
+        background: #5396FF;
+        color: pink;
+        border: none;
+        outline: none;
+        cursor: crosshair;
+        border-radius: 15px;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 2rem;
         font-family:WadenThicc;
     }
-    &__cancel {
-        background-color:#CE2029;
-        margin:24px 16px 0 0;
-    }
+
+    // &__cancel {
+    //     background-color:#CE2029;
+    //     margin:24px 16px 0 0;
+    // }
     &__cancel-btn {
-        background-color:#CE2029;
-        border:none;
-        color:#fff;
-        padding:24px;
-        font-size:1em;
+        background: #5396FF;
+        color: pink;
+        border: none;
+        outline: none;
+        cursor: crosshair;
+        border-radius: 15px;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 2rem;
         font-family:WadenThicc;
     }
+}
+
+.host__text-input-box  {
+    color: navy;
+    background-color: pink;
 }
