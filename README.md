@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+
+READ ME: 
+
+Welcome to phase 1 of my project. Please excuse rough code, I sacrificed a lot of tidiness and decorum to get a working project! It was a much larger undertaking than I anticipated, if anything, this project in its current phase exists as a proof of concept for what I believe is an interesting idea within a fertine niche that has struggled to adapt to the market. I am happy with where I am in two weeks, however I am excited to build on this idea.
+
+Phase 1: Proof Of Concept - hosts pin their location on the map, map populates and basic functionality is demonstrated for a user
+
+Phase 2: Create a host portal, establish MySQL / more robust backend. Figure out how to link the auth process with an actual network, that would be able to manage an encrypted upload. I would also like to transition to Google Maps API, which I believe is a more secure and intuitive system.
+
+Phase 3: Bring exclusively mobile. Establish secure network connecting the host portal, the upload from the user, to the actual printer. Establish how document transfer would actually happen. Map out a series of possible customer interactions. Regroup re: the market - who is using this? Possibly narrow in on one sector to launch the product.
+
+September 28th, 11AM:
+The auth process is for some reason, after two coordinate inputs, causing the map to crash. I am not sure why. I hope to get this figured out on Sep 28 ahead of our demo day. 
+
+To Install API localhost 8000:
+Npm i install
+Node index.js
+
+To Install press_print:
+Npm i axios, mailbox, install, firebase
+Npm start 
+
+Mapbox API key is in the axios request and doesn't require reloading. Thanks!
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
