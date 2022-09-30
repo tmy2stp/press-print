@@ -1,0 +1,61 @@
+.form__container {
+    width:100%;
+    padding-top:20vh;
+    background-image:url('../../assets/dummybg.jpg')
+}
+
+.host__form {
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+}
+.host {
+    &__label {
+        width:100%;
+        padding:24px 0 24px 0;
+        color:#66FF53;
+        font-family: WadenThicc;
+    }
+    &__text-input-box {
+        width:100%;
+        border-radius:4px;
+        padding:10px;
+    }
+    &__btn {
+        background: #5396FF;
+        color: pink;
+        border: none;
+        outline: none;
+        cursor: crosshair;
+        border-radius: 15px;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 2rem;
+        font-family:WadenThicc;
+    }
+
+    // &__cancel {
+    //     background-color:#CE2029;
+    //     margin:24px 16px 0 0;
+    // }
+    &__cancel-btn {
+        background: #5396FF;
+        color: pink;
+        border: none;
+        outline: none;
+        cursor: crosshair;
+        border-radius: 15px;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 2rem;
+        font-family:WadenThicc;
+    }
+}
+
+.host__text-input-box  {
+    color: navy;
+    background-color: pink;
+}
