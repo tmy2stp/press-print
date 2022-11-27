@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landing.scss'
-import videoBG from '../../assets/BGlight.mp4'
+import videoBG from '../../assets/aboutBG.jpg'
 import { Link } from 'react-router-dom';
 
 function Landing() {
@@ -8,7 +8,8 @@ function Landing() {
         <>
             <div className='main'>
                 <div className='overlay'>
-                    <video src={videoBG} autoPlay loop muted />
+                    <img src={videoBG} />
+                    {/* <video src={videoBG} autoPlay loop muted /> */}
                     <div className='content'>
                         <h1 className='content__h1'>Nimble, Secure.</h1>
                         <div className='content__buttons'>
