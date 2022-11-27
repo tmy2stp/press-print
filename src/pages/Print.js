@@ -5,7 +5,7 @@ import axios from "axios";
 function Print() {
     const [printers, setPrinters] = useState("");
     useEffect(() => {
-        axios.get("http://press-print-api.herokuapp.com/printers")
+        axios.get("https://press-print-api.herokuapp.com/printers")
             .then(resp => {
                 setPrinters(resp.data);
             });
