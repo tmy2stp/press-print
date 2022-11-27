@@ -22,7 +22,7 @@ const HostForm = () => {
 
     const [message, setMessage] = useState('');
     const { handleSubmit, reset } = useForm();
-    const API_URL = "http://localhost:8000/printers";
+    const API_URL = "http://press-print-api.herokuapp.com/printers";
 
     const onSubmit = async (data, e) => {
         e.preventDefault();
