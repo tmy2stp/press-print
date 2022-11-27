@@ -1,10 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
-import mapboxgl from "mapbox-gl";
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+import mapboxgl from "!mapbox-gl";
 import "./Map.scss";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import HostModal from "../HostModal/HostModal";
 
 mapboxgl.accessToken = "pk.eyJ1IjoidG15MnN0cCIsImEiOiJjbDhhb2xtd28waXB1M3B0ZXF0N3RibDZxIn0.IpxY6mo4MjqxCQVLRnLJZg";
+//mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 export default function Map(props) {
     const mapContainer = useRef(null);
