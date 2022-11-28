@@ -12,10 +12,6 @@ function About() {
                 <div className='background__content'>
                     <div className='copy__container'>
                         
-
-
-
-
                     </div>
                 </div>
             </div>

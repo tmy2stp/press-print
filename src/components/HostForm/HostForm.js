@@ -7,6 +7,7 @@ import axios from 'axios';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
+
 const HostForm = () => {
     // const auth = getAuth();
     // const user = auth.currentUser;

@@ -1,7 +1,10 @@
 .form__container {
     width:100%;
     padding-top:20vh;
-    background-image:url('../../assets/MAINBGJPG.jpg')
+    background-image:url('../../assets/NEWBGLAND.jpg');
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .host__form {
@@ -14,7 +17,7 @@
     &__label {
         width:100%;
         padding:24px 0 24px 0;
-        color:#66FF53;
+        color:rgb(184, 176, 176);
         font-family: WadenThicc;
     }
     &__text-input-box {
@@ -24,7 +27,7 @@
     }
     &__btn {
         background: #5396FF;
-        color: pink;
+        color: rgb(0, 0, 0);
         border: none;
         outline: none;
         cursor: crosshair;
@@ -42,7 +45,7 @@
     // }
     &__cancel-btn {
         background: #5396FF;
-        color: pink;
+        color: rgb(0, 0, 0);
         border: none;
         outline: none;
         cursor: crosshair;
@@ -57,5 +60,5 @@
 
 .host__text-input-box  {
     color: navy;
-    background-color: pink;
+    background-color: rgb(211, 214, 220);
 }
