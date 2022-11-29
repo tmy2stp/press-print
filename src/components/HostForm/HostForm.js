@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-
+import videoBG from '../../assets/NEWBGLAND.jpg'
 
 const HostForm = () => {
     // const auth = getAuth();
